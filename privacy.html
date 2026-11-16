@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glicemia · Privacy</title>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--fg:#1c2530;--muted:#5e6e82;--line:#dfe4ea;--accent:#2a7de1}
+@media (prefers-color-scheme:dark){:root{--bg:#0f141b;--card:#182029;--fg:#e8edf3;--muted:#9aa9ba;--line:#2a3542;--accent:#5aa2ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-left)) 56px}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:15px;margin:0 0 24px}
+a{color:var(--accent)}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px}
+h2{font-size:19px;margin:32px 0 8px}
+h3{font-size:16px;margin:20px 0 4px}
+p,li{max-width:68ch}
+.data{color:var(--muted);font-size:14.5px;margin:0 0 20px}
+.lingua{border-top:1px solid var(--line);margin-top:48px;padding-top:8px}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:8px 0}
+th,td{text-align:left;vertical-align:top;border-top:1px solid var(--line);padding:8px 10px 8px 0}
+th{color:var(--muted);font-weight:600}
+.tabella{overflow-x:auto}
+@media (max-width:600px){
+ .tabella table,.tabella tbody,.tabella tr,.tabella td{display:block;width:100%}
+ .tabella tr:first-child{display:none}
+ .tabella tr{border-top:1px solid var(--line);padding:10px 0}
+ .tabella td{border:0;padding:2px 0}
+ .tabella td:first-child{font-weight:600}
+ .tabella td:nth-child(2)::before,.tabella td:nth-child(3)::before{color:var(--muted);font-weight:600}
+ #it .tabella td:nth-child(2)::before{content:"Perché: "}
+ #it .tabella td:nth-child(3)::before{content:"Dove: "}
+ #en .tabella td:nth-child(2)::before{content:"Why: "}
+ #en .tabella td:nth-child(3)::before{content:"Where: "}
+}
+.nota{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Glicemia</a><a href="#it">Italiano</a><a href="#en">English</a></nav>
+
+<section id="it" lang="it">
+<h1>Informativa sulla privacy dell'app Glicemia</h1>
+<p class="data">Ultimo aggiornamento: 16/11/2026</p>
+
+<p class="nota">In breve: il tuo diario resta sul tuo dispositivo o dove scegli tu. L'app non ha pubblicità, non ti traccia e non chiede di creare un account. Solo se usi l'assistente IA, i nomi e le quantità degli alimenti e (per il pasto da una foto) la foto ridotta vengono inviati al server dell'app e ad Anthropic per la stima, dopo il tuo consenso.</p>
+
+<h2>Chi è il titolare del trattamento</h2>
+<p>Gianicola Orrù, Cagliari, Italia. Contatto: [EMAIL DI CONTATTO].</p>
+
+<h2>Quali dati usa l'app e dove finiscono</h2>
+<div class="tabella"><table>
+<tr><th>Dati</th><th>Perché</th><th>Dove restano</th></tr>
+<tr><td>Diario: glicemie, pasti, alimenti, profilo (sesso, anno di nascita, peso, altezza), attività</td><td>È il contenuto dell'app</td><td>In un file Excel sul tuo dispositivo (app File › Sul mio iPhone › Glicemia) o nella posizione che scegli tu, per esempio iCloud Drive. Lo sviluppatore non vi ha accesso.</td></tr>
+<tr><td>Dati dell'app Salute: glicemia, passi, calorie attive, peso, altezza</td><td>Solo se lo autorizzi: per completare il diario e calcolare il fabbisogno</td><td>Letti sul dispositivo e scritti solo nel tuo diario. Non vengono inviati allo sviluppatore né a terzi e non sono usati per pubblicità.</td></tr>
+<tr><td>Nomi e quantità degli alimenti</td><td>Stima di calorie e nutrienti con l'assistente IA</td><td>Inviati al server dell'app e ad Anthropic solo quando usi l'assistente. Non vengono conservati dal server dell'app.</td></tr>
+<tr><td>Foto del pasto (ridotta)</td><td>Riconoscimento degli alimenti con l'assistente IA</td><td>Inviata al server dell'app e ad Anthropic solo quando usi «Pasto da una foto». Non viene conservata dal server dell'app. Se lo scegli, l'originale viene salvato nell'album «Pasti» di Foto, sul tuo dispositivo.</td></tr>
+<tr><td>Posizione</td><td>Scrivere nella foto salvata il luogo del pasto</td><td>Solo nella foto salvata sul tuo dispositivo. Non viene inviata.</td></tr>
+<tr><td>Identificativo dell'abbonamento</td><td>Verificare con Apple che l'abbonamento sia attivo</td><td>Inviato al server dell'app, che chiede ad Apple lo stato dell'abbonamento. I pagamenti sono gestiti solo da Apple: lo sviluppatore non vede i tuoi dati di pagamento.</td></tr>
+<tr><td>Codice di accesso (se ne hai ricevuto uno)</td><td>Usare l'assistente senza abbonamento</td><td>Il server conserva un'impronta del codice, il nome a cui è stato dato e la data del primo utilizzo.</td></tr>
+<tr><td>Accesso a OneDrive o Google Drive (facoltativo)</td><td>Copie di sicurezza del diario</td><td>Le copie vanno nel tuo spazio personale del servizio che scegli. Il permesso di accesso resta nel Portachiavi del dispositivo.</td></tr>
+<tr><td>Credenziali di LibreLinkUp (se la funzione è disponibile e la usi)</td><td>Scaricare le letture del sensore</td><td>Nel Portachiavi del dispositivo; inviate solo ai server di Abbott.</td></tr>
+</table></div>
+
+<h2>Il server dell'app e i fornitori</h2>
+<ul>
+<li><b>Cloudflare</b> ospita il server dell'app. Il server conserva solo contatori giornalieri delle richieste (fino a 2 giorni), lo stato dell'abbonamento (fino a 1 ora) e i dati dei codici di accesso. Come ogni servizio internet, Cloudflare può registrare l'indirizzo IP per la sicurezza della rete.</li>
+<li><b>Anthropic</b> fornisce l'assistente IA (Claude) e tratta i testi e le foto ricevute per rispondere, secondo i propri termini commerciali e la propria informativa: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.</li>
+<li><b>Apple</b> gestisce download, pagamenti e abbonamenti e fornisce i dati di Salute sul dispositivo.</li>
+</ul>
+<p>Alcuni fornitori possono trattare i dati anche fuori dall'Unione europea, con le garanzie previste dal GDPR (per esempio le clausole contrattuali standard).</p>
+
+<h2>Su quale base</h2>
+<ul>
+<li>Invio di alimenti e foto all'assistente IA: il tuo <b>consenso esplicito</b>, chiesto dall'app prima del primo invio (art. 9 GDPR, dati relativi alla salute). Puoi revocarlo in Altro › Assistente IA.</li>
+<li>Verifica dell'abbonamento: esecuzione del contratto.</li>
+<li>Sicurezza del server e limiti di utilizzo: legittimo interesse.</li>
+</ul>
+
+<h2>Cosa l'app non fa</h2>
+<ul>
+<li>Non mostra pubblicità e non usa strumenti di analisi o tracciamento.</li>
+<li>Non vende né cede dati a terzi.</li>
+<li>Non usa i dati di Salute per scopi diversi dal tuo diario.</li>
+</ul>
+
+<h2>I tuoi diritti</h2>
+<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione e portabilità dei dati, opporti al trattamento e revocare il consenso, scrivendo a [EMAIL DI CONTATTO]. I dati del diario sono sotto il tuo controllo: li cancelli eliminando il file o l'app. Puoi anche presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+<h2>Avvertenza medica</h2>
+<p>Glicemia è un diario e uno strumento informativo, non un dispositivo medico. Non sostituisce il sensore, i suoi allarmi né le indicazioni del medico. Le stime dell'assistente IA sono indicative. L'app è destinata a persone maggiorenni.</p>
+
+<h2>Modifiche</h2>
+<p>Se questa informativa cambia, la data in alto viene aggiornata. Le modifiche importanti vengono descritte anche nelle note di aggiornamento dell'app nell'App Store.</p>
+</section>
+
+<section id="en" lang="en" class="lingua">
+<h1>Glucose app privacy policy</h1>
+<p class="data">Last updated: November 16, 2026</p>
+
+<p class="nota">In short: your diary stays on your device or wherever you choose. The app has no ads, does not track you and does not ask you to create an account. Only if you use the AI assistant, food names and quantities and (for a meal from a photo) the reduced photo are sent to the app's server and to Anthropic for the estimate, after your consent.</p>
+
+<h2>Data controller</h2>
+<p>Gianicola Orrù, Cagliari, Italy. Contact: [CONTACT EMAIL].</p>
+
+<h2>What data the app uses and where it goes</h2>
+<div class="tabella"><table>
+<tr><th>Data</th><th>Why</th><th>Where it stays</th></tr>
+<tr><td>Diary: glucose readings, meals, foods, profile (sex, year of birth, weight, height), activity</td><td>It is the content of the app</td><td>In an Excel file on your device (Files app › On My iPhone › Glucose) or in the location you choose, for example iCloud Drive. The developer has no access to it.</td></tr>
+<tr><td>Health app data: blood glucose, steps, active calories, weight, height</td><td>Only if you allow it: to complete the diary and calculate energy needs</td><td>Read on the device and written only to your diary. Never sent to the developer or third parties, and never used for advertising.</td></tr>
+<tr><td>Food names and quantities</td><td>Calorie and nutrient estimates with the AI assistant</td><td>Sent to the app's server and to Anthropic only when you use the assistant. Not stored by the app's server.</td></tr>
+<tr><td>Meal photo (reduced)</td><td>Recognizing foods with the AI assistant</td><td>Sent to the app's server and to Anthropic only when you use «Meal from a photo». Not stored by the app's server. If you choose, the original is saved in the «Meals» album in Photos, on your device.</td></tr>
+<tr><td>Location</td><td>Writing the meal's place into the saved photo</td><td>Only in the photo saved on your device. Never sent.</td></tr>
+<tr><td>Subscription identifier</td><td>Checking with Apple that the subscription is active</td><td>Sent to the app's server, which asks Apple for the subscription status. Payments are handled only by Apple: the developer never sees your payment details.</td></tr>
+<tr><td>Access code (if you received one)</td><td>Using the assistant without a subscription</td><td>The server keeps a fingerprint of the code, the name it was given to and the date of first use.</td></tr>
+<tr><td>OneDrive or Google Drive sign-in (optional)</td><td>Backups of the diary</td><td>Copies go to your personal space on the service you choose. The access permission stays in the device keychain.</td></tr>
+<tr><td>LibreLinkUp credentials (if the feature is available and you use it)</td><td>Downloading sensor readings</td><td>In the device keychain; sent only to Abbott's servers.</td></tr>
+</table></div>
+
+<h2>The app's server and providers</h2>
+<ul>
+<li><b>Cloudflare</b> hosts the app's server. The server only keeps daily request counters (up to 2 days), the subscription status (up to 1 hour) and access code data. Like any internet service, Cloudflare may log IP addresses for network security.</li>
+<li><b>Anthropic</b> provides the AI assistant (Claude) and processes the texts and photos it receives to answer, under its commercial terms and privacy policy: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.</li>
+<li><b>Apple</b> handles downloads, payments and subscriptions and provides Health data on the device.</li>
+</ul>
+<p>Some providers may process data outside the European Union, with the safeguards required by the GDPR (for example standard contractual clauses).</p>
+
+<h2>Legal basis</h2>
+<ul>
+<li>Sending foods and photos to the AI assistant: your <b>explicit consent</b>, requested by the app before the first upload (Art. 9 GDPR, health data). You can revoke it in More › AI assistant.</li>
+<li>Subscription check: performance of the contract.</li>
+<li>Server security and usage limits: legitimate interest.</li>
+</ul>
+
+<h2>What the app does not do</h2>
+<ul>
+<li>It shows no ads and uses no analytics or tracking tools.</li>
+<li>It does not sell or share data with third parties.</li>
+<li>It does not use Health data for anything other than your diary.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>You can request access, rectification, erasure, restriction and portability of your data, object to processing and withdraw consent by writing to [CONTACT EMAIL]. Diary data is under your control: you delete it by deleting the file or the app. You can also lodge a complaint with your data protection authority (in Italy: <a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+<h2>Medical disclaimer</h2>
+<p>Glucose is a diary and an informational tool, not a medical device. It does not replace your sensor, its alarms or your doctor's advice. The AI assistant's estimates are approximate. The app is intended for adults.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top is updated. Important changes are also described in the app's update notes on the App Store.</p>
+</section>
+</main>
+</body>
+</html>
